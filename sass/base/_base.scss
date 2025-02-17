@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Raleway:ital,wght@0,800;1,400,800&family=Roboto:wght@300&display=swap');
+
+
+html {
+    min-height: 100vh; /* sticky footer */
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh; /* sticky footer */
+	display: flex; /* sticky footer */
+	flex-direction: column; /* sticky footer */
+
+    background-color: $dark;
+	font-family:$font-main;
+    font-weight: 400;
+    color:$white;
+    font-size: 16px;
+    line-height: 1.6875;
+    
+
+    text-rendering: optimizeSpeed;
+    //text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body > * {
+	flex-shrink: 0; /* sticky footer */
+}
+
+
+/* Grid styles */
+
+.container {
+	max-width: 1140px;
+    width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+
+
+.text-right {
+    text-align: right;
+}
+
+
+.visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+
+    position: absolute;
+
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50&);
+
+    white-space: nowrap;
+}
+/* Utility */
+
+.none {
+	display: none !important;
+}
+
+
+/* Sticky Footer */
+
+.footer {
+	margin-top: auto; /* sticky footer */
+}
+
+.link-bold {
+    color: $accent;
+    font-weight: 700;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}

@@ -1,0 +1,29 @@
+.title {
+color: $accent;
+font-family: $font-accent;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.4;
+}
+
+.title--header {
+   position: relative;
+   font-size: 48px;
+   margin-bottom: 15px;
+   padding-bottom: 121px;
+   text-align: center;
+
+   @include mediaTablet {
+      font-size: 36px;
+      padding-bottom: 100px;
+    }
+}
+
+.title--apartments {
+   margin-bottom: 88px;
+
+   @include mediaTablet {
+      font-size: 28px;
+      margin-bottom: 44px;  
+    }
+}
